@@ -1,0 +1,4 @@
+timezone: UTC
+
++hello:
+  sh>: bin/hello

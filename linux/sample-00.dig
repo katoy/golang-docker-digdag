@@ -1,0 +1,9 @@
+timezone: UTC
+
+_export:
+  docker:
+    image: ubuntu:14.04
+    # image: my-golang
+
+!include : 'tasks/sample.dig'
+!include : 'tasks/hello.dig'

@@ -1,0 +1,12 @@
+timezone: UTC
+
+_export:
+  docker:
+    image: alpine
+
++graph:
+  sh>: ./graph
+
+# client.json を このファイルがあるフォルダに copy して置くこと。
+# cp ../bigquery/bin/linux64/graph ./graph として、 コンパイル結果のファイルを copy して置くこと。
+# bin/graph をつくりなおした場合でも、 docker の image を作り直す必要は無い。

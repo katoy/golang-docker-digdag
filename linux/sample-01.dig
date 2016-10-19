@@ -1,0 +1,12 @@
+timezone: UTC
+
+_export:
+  docker:
+    image: ubuntu:14.04
+
+!include : 'tasks/hello.dig'
+
+# ./bin/hallo は golang のプログラムをクロスコンパイルして用意する。
+# $ cd ../goang
+# $ ./makebin.sh hello
+# $ cp bin/linux64/hello ../linux/bin
