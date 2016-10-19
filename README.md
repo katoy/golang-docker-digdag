@@ -132,7 +132,7 @@ $ opne graph.png
 ```
 
 graph.go を走らせると graph.png が生成される。open で画像を表示させて確認できる。
-![生成された画像](./screenshots/graph.gif)
+![生成された画像](./screenshots/graph.png)
 
 次の作業の為に, cross compile をしておく。
 ```
