@@ -43,7 +43,7 @@ docker-machine　をインストールする。
 　次のように徐々に動作確認して、組み上げていった。
 　　1．golang で hello world プログラムを go run で実行する。 mac 用に compile して実行する。
 　　2. docker + digdag で golang での hello world プログラムを cross compile したものを実行させる。
-　　3．golang で BigQuery に query を発行し、グラフを生成するプログラムを go run で実行する。 mac 用に compile して実行する。  
+　　3．golang で BigQuery に query を発行し、グラフを生成するプログラムを go run で実行する。 mac 用に compile して実行する。
 　　4. 上のことを組み合わせて、 docker + digdag で BigQuery にquery を発行し、グラフを生成させる。
 
 # 作業1
@@ -101,15 +101,19 @@ alpine のものは ubuntu の 1/10 のサイズであることがわかる。
 それぞれの image でワークフローを実行できることを確認します。
 (作業１で、 linux 用の実行ファイルがすでに作成済みのはずです。それを ./bin/hello として copy しておきます)
 
-# ubuntu の docker イメージで corss compaile したプログラムを実行してみます。
+* ubuntu の docker イメージで corss compaile したプログラムを実行してみます。
+
 ```
 $ digdag run sample-01.dig -g hello
  ... 省略 ...
  Hello world from go-lang.
 こんにちは. こちらは GO 言語です。
 amd64 linux
+```
 
-$ digdag run sample-01-alpine.dig -g hello    # alpine で実行
+* alpine の docker イメージで corss compaile したプログラムを実行してみます。
+```
+$ digdag run sample-01-alpine.dig -g hello
 Hello world from go-lang.
 こんにちは. こちらは GO 言語です。
 amd64 linux
