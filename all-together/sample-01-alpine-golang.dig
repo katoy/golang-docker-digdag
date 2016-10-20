@@ -1,0 +1,8 @@
+timezone: UTC
+
+_export:
+  docker:
+    image: douglarek/alpine-golang
+
++graph:
+  sh>: ./graph

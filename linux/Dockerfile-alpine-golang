@@ -1,0 +1,2 @@
+FROM douglarek/alpine-golang
+RUN apk --update add ruby && rm -rf /var/cache/apk/*
