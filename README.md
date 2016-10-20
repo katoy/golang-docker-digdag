@@ -10,7 +10,7 @@ golang で BigQuery API を利用してみます。
 
 * golang コードを cross compile した結果をつかうなら、 docker の image に golang 環境のインストールは不要。
 
-* digdag + docker でプログラムを実行させるなら、 実行するプログラムの変更の度に docker image をつくりなおす必要は無い。
+* digdag + docker でプログラムを実行させるなら、 実行するプログラムの変更の度に docker image をつくりなおす必要は無い。(特に設定をせずに、digidag 側でフォルダのマウントをしてくれます)
 
 
 # ためした環境
