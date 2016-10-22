@@ -2,6 +2,6 @@ timezone: UTC
 
 _export:
   docker:
-    image: douglarek/alpine-golang
+    image: douglarek/alpine-golang:latest
 
 !include : 'tasks/hello.dig'

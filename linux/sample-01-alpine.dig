@@ -2,6 +2,6 @@ timezone: UTC
 
 _export:
   docker:
-    image: alpine
+    image: alpine:latest
 
 !include : 'tasks/hello.dig'

@@ -6,6 +6,9 @@ if [ $# != 1 ]; then
 	exit 0
 fi
 
+rm -fr bin
+mkdir -p bin
+
 GOOS=linux GOARCH=amd64   go build -o ./bin/linux64/$1
 GOOS=linux GOARCH=386     go build -o ./bin/linux386/$1
 
